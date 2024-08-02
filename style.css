@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Add this line */
+    width: 100%; 
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    /* Add this line */
+    width: 100%;
+}
+        .ide-container {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+        }
+
+        .ide-panel {
+            height: 70%;
+        }
+
+        .console-panel {
+            height: 30%;
+            border-top: 1px solid #ccc;
+        }
+
+        .result-panel {
+            width: 50%;
+            height: 100%;
+            border: 1px solid #ccc;
+        }
+
+        #editor {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tabs {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .tab.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
